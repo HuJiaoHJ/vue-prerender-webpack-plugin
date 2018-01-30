@@ -87,6 +87,24 @@ export default app;
 
 [example](./tree/master/example) 
 
+#### 执行实例
+
+`example/vue-prerender`文件夹下，执行以下脚本：
+
+```
+npm run dev // 编译预渲染，本地开发
+
+npm run dev:normal // 正常编译
+
+npm run dev --skeleton // 指定页面进行编译
+
+npm run build // 编译预渲染，打包
+
+npm run build:normal
+
+npm run build --skeleton
+```
+
 ## 效果
 
 #### 预渲染页面
