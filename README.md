@@ -10,13 +10,13 @@
 
 #### 安装
 
-```
-npm install vue-prerender-webpack-plugin
+``` bash
+$ npm install vue-prerender-webpack-plugin
 ```
 
 #### 在webpack配置中使用插件
 
-```
+``` js
 const VuePrerenderWebpackPlugin = require('vue-prerender-webpack-plugin');
 const skeleton = require('./skeleton'); // vue服务端渲染的webpack配置
  
@@ -39,11 +39,11 @@ module.exports = {
 
 #### 页面结构
 
-预渲染插件中使用了Vue的SSR，所以页面结构应该按照[SSR源码结构](https://ssr.vuejs.org/zh/structure.html)，如下：
+预渲染插件中使用了Vue的SSR，所以页面结构应该按照 [SSR源码结构](https://ssr.vuejs.org/zh/structure.html)，如下：
 
 ##### app.js
 
-```
+``` js
 import Vue from 'vue';
 import App from './index.vue';
 
@@ -59,7 +59,7 @@ export default app;
 
 ##### index-normal.js
 
-```
+``` js
 import app from './app';
 
 app.$mount('#app');
@@ -69,7 +69,7 @@ export default app;
 
 ##### index-skeleton.js
 
-```
+``` js
 import app from './app';
 
 export default app;
@@ -77,7 +77,7 @@ export default app;
 
 ##### index.html
 
-```
+``` html
 <div id="app">
     <!--vue-ssr-outlet-->
 </div>
@@ -89,20 +89,20 @@ export default app;
 
 #### 执行实例
 
-`example/vue-prerender`文件夹下，执行以下脚本：
+`example/vue-prerender` 文件夹下，执行以下脚本：
 
-```
-npm run dev // 编译预渲染，本地开发
+``` bash
+$ npm run dev # 编译预渲染，本地开发
 
-npm run dev:normal // 正常编译
+$ npm run dev:normal # 正常编译
 
-npm run dev --skeleton // 指定页面进行编译
+$ npm run dev --skeleton # 指定页面进行编译
 
-npm run build // 编译预渲染，打包
+$ npm run build # 编译预渲染，打包
 
-npm run build:normal
+$ npm run build:normal # 正常编译，打包
 
-npm run build --skeleton
+$ npm run build --skeleton # 指定页面进行编译，打包
 ```
 
 ## 效果
@@ -113,9 +113,13 @@ npm run build --skeleton
 
 截图：
 
-![skeleton-page](./screenshot/skeleton-page.png)
+<p align="left">
+    <img width="800px" src="./screenshot/skeleton-page.png">
+</p>
 
-![skeleton](./screenshot/skeleton.png)
+<p align="left">
+    <img width="800px" src="./screenshot/skeleton.png">
+</p>
 
 #### 正常页面
 
@@ -123,9 +127,13 @@ npm run build --skeleton
 
 截图：
 
-![normal-page](./screenshot/normal-page.png)
+<p align="left">
+    <img width="800px" src="./screenshot/normal-page.png">
+</p>
 
-![normal](./screenshot/normal.png)
+<p align="left">
+    <img width="800px" src="./screenshot/normal.png">
+</p>
 
 1、首屏时间：正常构建页面需要js执行完之后渲染首屏（3000ms），而预渲染构建在HTML加载完的时候就渲染首屏了（500ms）
 
@@ -133,7 +141,9 @@ npm run build --skeleton
 
 ## 实现
 
-![realize](./screenshot/realize.png)
+<p align="left">
+    <img width="800px" src="./screenshot/realize.png">
+</p>
 
 ## 注意
 
