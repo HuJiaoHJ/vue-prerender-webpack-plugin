@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="utf-8">
+        <title>编译预渲染测试页面</title>
+    <style data-vue-ssr-id="4089173c:0">
+body {
+  font-size: 16px;
+}
+body button {
+    font-size: 16px;
+    background-color: #fff;
+    border: 0.01rem solid #000;
+}
+body .blank-space {
+    display: inline-block;
+    width: 100px;
+    height: 1.5em;
+    line-height: 1.5em;
+    background-color: #eee;
+}
+</style></head>
+    <body>
+        <div id="app">
+            <section data-server-rendered="true"><div>
+        骨架屏页面（进行了编译预渲染）
+    </div> <div>
+        created: <span>created</span></div> <div>
+        timeout: <span class="blank-space"></span></div> <div>
+        mounted: <span class="blank-space"></span></div> <button>click me</button> <div>
+        show
+    </div> <div>
+        show: true
+    </div></section>
+        </div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
