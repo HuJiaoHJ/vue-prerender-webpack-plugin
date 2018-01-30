@@ -1963,7 +1963,7 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-server-renderer@^2.5.9:
+vue-server-renderer@^2.5.13:
   version "2.5.13"
   resolved "http://r.npm.sankuai.com/vue-server-renderer/download/vue-server-renderer-2.5.13.tgz#6a0d421a0fd3e2b7357b59495d744b7e9279d68e"
   dependencies:
