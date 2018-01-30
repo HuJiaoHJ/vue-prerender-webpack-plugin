@@ -2,7 +2,7 @@
   "name": "vue-prerender-webpack-plugin",
   "version": "1.0.0",
   "description": "利用Vue的SSR实现编译预渲染webpack插件，在编译过程中生成页面骨架屏，提高页面性能和体验，提高首屏",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
