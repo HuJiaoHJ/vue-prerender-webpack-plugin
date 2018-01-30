@@ -33,7 +33,7 @@ module.exports = {
 }
 ```
 
-在使用编译预渲染插件`vue-prerender-webpack-plugin`需要传入vue服务端渲染的webpack配置，可以参考 [Vue.js Server-Side Rendering Guide](https://ssr.vuejs.org/en/)
+在使用编译预渲染插件`vue-prerender-webpack-plugin`需要传入vue服务端渲染的webpack配置，可以参考 [Vue.js Server-Side Rendering Guide](https://ssr.vuejs.org/en/)
 
 具体webpack配置参考 example 中 [skeleton](./blob/master/example/vue-prerender/webpack/skeleton.js) 中的配置
 
@@ -65,5 +65,5 @@ module.exports = {
 
 1、首屏时间：正常构建页面需要js执行完之后渲染首屏（3000ms），而预渲染构建在HTML加载完的时候就渲染首屏了（500ms）
 
-2、编译预渲染会在编译过程中将组件空状态编译到HTML中，能一定程度上减少初次渲染的 DOM 节点数以节省 Virtual DOM 的初始化开销
+2、编译预渲染会在编译过程中将组件空状态编译到HTML中，能一定程度上减少初次渲染的 DOM 节点数以节省 Virtual DOM 的初始化开销
 
