@@ -18,7 +18,7 @@ $ npm install vue-prerender-webpack-plugin
 
 ``` js
 const VuePrerenderWebpackPlugin = require('vue-prerender-webpack-plugin');
-const skeleton = require('./skeleton'); // vue服务端渲染的webpack配置
+const skeleton = require('./skeleton'); // vue服务端渲染的webpack配置
  
 module.exports = {
     ...
